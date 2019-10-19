@@ -2,12 +2,8 @@
 body {
     line-height: 25px;
     font-size: 14px;
-    font-family: "Crimson Text", serif;
-    color: #777777;
-}
-
-p {
     font-family: "Montserrat", sans-serif;
+    color: #777777;
 }
 
 h1,
@@ -268,7 +264,6 @@ button:focus {
     outline: none !important;
     box-shadow: 0px 20px 50px rgba(0, 175, 224, 0.3);
     text-align: center;
-    cursor: pointer;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -663,9 +658,11 @@ button:focus {
 
 .banner_area {
     position: relative;
-    background: url(../img/banner/banner.jpg) no-repeat center center;
+    background: url(../img/information-technology.jpg) no-repeat center center;
+    background-size: cover;
     z-index: 1;
-    min-height: 392px;
+    /* min-height: 400px; */
+    height: 100%;
     padding-top: 0 !important;
 }
 
@@ -698,11 +695,7 @@ button:focus {
     font-size: 48px;
 }
 
-@media (max-width: 991px) {
-    .banner_area .banner_inner .banner_content p {
-        display: none;
-    }
-}
+@media (max-width: 991px) {}
 
 .banner_area .banner_inner .banner_content .page_link {
     display: inline-block;
@@ -1039,6 +1032,11 @@ button:focus {
 .right-contents ul li a {
     color: #777777;
     text-align: left;
+    transition: .3s all;
+}
+
+.right-contents ul li a:hover {
+    color: #00aee0;
 }
 
 .right-contents ul li a p {
@@ -1050,7 +1048,7 @@ button:focus {
 }
 
 .right-contents .enroll {
-    margin-top: 10px;
+    box-shadow: 0 0 0 0 lightgrey;
     width: 100%;
 }
 
@@ -1078,6 +1076,23 @@ button:focus {
     .right-contents .avg-review {
         margin-bottom: 20px;
     }
+}
+
+.thumb img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.comment {
+    color: #777777;
+}
+
+.single-comment {
+    transition: .3s;
+}
+
+.single-comment:hover {
+    box-shadow: 0px 4px 20px 0 lightgrey;
 }
 
 @media (max-width: 1024px) {
@@ -1469,7 +1484,11 @@ button:focus {
 /* =================================== */
 
 .footer-area {
-    background: #000000;
+    background: #333;
+}
+
+.footer-area p {
+    color: lightgrey;
 }
 
 .footer_logo_container img {
@@ -1510,6 +1529,7 @@ button:focus {
 .footer-area .single-footer-widget ul li {
     margin-bottom: 15px;
     list-style: none;
+    color: lightgrey;
 }
 
 .footer-area .single-footer-widget ul li a {
@@ -1517,7 +1537,7 @@ button:focus {
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    color: #777777;
+    color: lightgrey;
 }
 
 .footer-area .single-footer-widget ul li a:hover {
